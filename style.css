@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: white;
+  box-sizing: border-box;
+  list-style: none;
+  list-style: 3;
+  text-decoration: none;
+}
+
+/* general styles */
+body {
+  color: hsl(0, 0%, 100%);
+  background: hsl(218, 28%, 13%);
+}
+.testimonial > div > div {
+  background: hsl(219, 30%, 18%);
+}
+footer {
+  background: hsl(216, 53%, 9%);
+}
+p,
+a {
+  font-size: 14px;
+}
+.float,
+.first,
+nav {
+  background: hsl(217, 28%, 15%);
+}
+input[type="submit"],
+.btn {
+  background: hsl(176, 68%, 64%);
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+  border-radius: 22px;
+}
+input[type="email"]:focus {
+  color: hsl(216, 53%, 9%);
+}
+h2 {
+  font-size: ;
+}
+
+/* header start*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+/* header end */
+
+/* first section */
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 20px 405px;
+  text-align: center;
+  background-image: url("./images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.first .image {
+  width: 110%;
+}
+
+.first .image img {
+  width: 100%;
+}
+
+/* second */
+.second .container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  text-align: center;
+  padding: 30px 350px;
+  align-items: center;
+}
+
+.container-2 .box > * {
+  margin-bottom: 15px;
+}
+
+/* third */
+
+.third {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  gap: 3rem;
+}
+
+.third .image,
+.third .image img {
+  width: 100%;
+}
+
+.third .text-2 > * {
+  margin-bottom: 15px;
+}
+
+.third span {
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+  width: 200px;
+  color: hsl(170, 45%, 43%);
+}
+
+#arrow {
+  color: white;
+  background-color: hsl(170, 45%, 43%);
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+/* testimonial */
+.testimonial {
+  padding: 80px 100px;
+}
+.testimonial > .container-tes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 40px 20px;
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.container-tes > .box {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+
+.box > .author {
+  display: flex;
+  margin-top: 20px;
+  gap: 1rem;
+  align-items: center;
+}
+.avatar {
+  width: 25px;
+  height: 25px;
+}
+.avatar img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+/* floating section */
+section > .float {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 2;
+  border-radius: 13px;
+  position: relative;
+  bottom: -100px;
+}
+
+.float input[type="email"] {
+  width: 400px;
+  border-radius: 30px;
+  padding: 10px;
+  margin-right: 40px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  height: 500px;
+  padding: 70px;
+  padding-top: 200px;
+  line-height: 2;
+  letter-spacing: 2px;
+  gap: 3rem;
+}
+
+footer > * {
+  width: 20%;
+}
+
+.footer-icons > i{
+  padding: 5px;
+  border-radius: 100%;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+
+.contact > .contact-child{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.down{
+  align-items: start;
+}
+
+@media(max-width: 375px){
+}
