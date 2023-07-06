@@ -84,7 +84,7 @@ nav ul {
 /* second */
 .second .container-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   text-align: center;
   padding: 30px 350px;
@@ -189,7 +189,6 @@ section > .float {
 
 footer {
   display: flex;
-  height: 500px;
   padding: 70px;
   padding-top: 200px;
   line-height: 2;
@@ -219,4 +218,64 @@ footer > * {
 }
 
 @media(max-width: 375px){
+  nav{
+    padding: 15px;
+  }
+  nav .nav-links ul{
+    flex-direction: column;
+  }
+  .first{
+    flex-direction: column;
+    padding: 15px;
+  }
+  .second{
+    padding: 15px;
+  }
+  .second .container-2{
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+  .third{
+    flex-direction: column;
+    padding: 15px;
+  }
+  .testimonial{
+    padding: 15px;
+  }
+  .testimonial > .container-tes {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  
+  .container-tes > .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  section > .float {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    gap: 1rem;
+    bottom: -150px;
+  }
+  
+  .float input[type="email"] {
+    width: 80%;
+    margin: 10px 10px;
+  }
+  footer{
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 200px;
+  }
+  footer > * {
+    width: 80%;
+    margin: auto;
+  }
+  .footer-icons{
+    margin: auto;
+  }
 }
